@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 
 /* Color Set */
-$primary: #1692da;
-$secondary: #ffb428;
-$warning: #02071d;
-$success: #2299d4;
-$danger: #ff4d00;
+$primary: #0c5dad;
+$secondary: #D6F4FF;
+$warning: #E29E21;
+$success: #ad5218;
+$danger: #ffae17;
 $black: #302c2c;
 $white: #fcfef7;
 $creamWhite: #f7f2ed;
@@ -126,7 +126,7 @@ p {
 }
 
 .btn-secondary {
-    color: $white;
+    color: $dark;
     font-weight: 500;
     border: 2px solid $secondary;
     transition: all 1000ms;
@@ -175,14 +175,14 @@ p {
 
 
 
-.btn-warning {
-    color: $white;
+.btn-danger {
+    color: #ffffff;
 }
 
 .btn-success {
     background-color: $success;
     border-color: $success;
-    color: #000;
+    color: $white;
 }
 
 .btn-outline-success {
@@ -227,7 +227,7 @@ section {
     font-size: 18px;
     font-weight: 500;
     padding-left: 7rem;
-    color: $secondary;
+    color: $primary;
     position: relative;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
@@ -238,7 +238,14 @@ section {
         height: 2px;
         left: 0%;
         bottom: 50%;
-        background-color: $secondary;
+        background-color: $primary;
+    }
+}
+
+.sub-header-white{
+    color: $white !important;
+    &::after {
+        background-color: $white !important;
     }
 }
 

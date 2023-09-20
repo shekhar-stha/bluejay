@@ -5,6 +5,9 @@ nav {
     max-width: calc(100% - 5rem);
     width: 18rem;
 
+    @media (max-width: 1400px) {
+      width: 17rem;
+    }
     img {
       width: 100%;
       object-fit: contain;
@@ -20,6 +23,10 @@ nav {
 
     &:hover {
       color: #cfcaca;
+    }
+
+    @media (max-width: 1400px) {
+      margin: 0 1rem;
     }
 
     @media (max-width: 1200px) {
