@@ -598,9 +598,10 @@ AOS.init();
 
 
 $('.testimonial-slider').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   loop: true,
+  autoplay: true,
   speed: 300,
   slidesToShow: 2,
   slidesToScroll: 1,

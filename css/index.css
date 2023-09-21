@@ -12211,6 +12211,24 @@ nav .nav-link:hover {
   }
 }
 
+.inner {
+  background: rgb(12, 93, 173);
+  background: linear-gradient(180deg, rgb(12, 93, 173) 2%, rgba(12, 93, 173, 0.8240546218) 47%, rgba(12, 93, 173, 0.7456232493) 72%, rgba(12, 93, 173, 0.6755952381) 100%) !important;
+}
+.inner .bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+@media (min-width: 1200px) {
+  .inner .bg-img {
+    display: block !important;
+  }
+}
+
 .nav-hero {
   background-color: #0c5dad;
   position: relative;
@@ -12883,7 +12901,7 @@ footer .footer-nav p {
 }
 .phone a i {
   font-size: 60px;
-  color: #D6F4FF;
+  color: #ffae17;
   background-color: #f7f2ed;
   padding: 2rem;
   border-radius: 50%;
