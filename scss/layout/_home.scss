@@ -254,7 +254,7 @@
             width: 80%;
             height: 20%;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translateX(-50%) !important;
         }
 
         @media (max-width: 576px) {
@@ -771,7 +771,7 @@ footer {
 
         i {
             font-size: 60px;
-            color: $danger;
+            color: $primary;
             background-color: $creamWhite;
             padding: 2rem;
             border-radius: 50%;
