@@ -6,7 +6,7 @@ $primary: #0c5dad;
 $secondary: #D6F4FF;
 $warning: #98ec13;
 $success: #ad5218;
-$danger: #98ec13;
+$danger: #86d10e;
 $black: #302c2c;
 $white: #fcfef7;
 $creamWhite: #f7f2ed;
@@ -130,6 +130,7 @@ p {
     font-weight: 500;
     border: 2px solid $secondary;
     transition: all 1000ms;
+
     &:hover {
         color: $secondary;
         background-color: transparent;
@@ -173,13 +174,23 @@ p {
     }
 }
 
+.btn-outline-danger {
+    border: 2px solid #7fc70b;
+    color: #7fc70b;
+    transition: all ease 0.35s;
 
+    &:hover {
+        background-color: $danger;
+        color: #fff;
+    }
+}
 
 .btn-danger {
     color: #fff;
     border: 2px solid $danger;
     transition: all ease 0.3s;
-    &:hover{
+
+    &:hover {
         background-color: transparent;
         color: $danger;
         border: 2px solid $danger;
@@ -189,7 +200,8 @@ p {
 .btn-light {
     border: 2px solid $white;
     transition: all ease 0.3s;
-    &:hover{
+
+    &:hover {
         background-color: transparent;
         color: $dark;
         border: 2px solid $white;
@@ -248,6 +260,7 @@ section {
     position: relative;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
+
     &::after {
         position: absolute;
         content: "";
@@ -259,8 +272,9 @@ section {
     }
 }
 
-.sub-header-white{
+.sub-header-white {
     color: $white !important;
+
     &::after {
         background-color: $white !important;
     }
