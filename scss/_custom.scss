@@ -4,9 +4,9 @@
 /* Color Set */
 $primary: #0c5dad;
 $secondary: #D6F4FF;
-$warning: #E29E21;
+$warning: #98ec13;
 $success: #ad5218;
-$danger: #ffae17;
+$danger: #98ec13;
 $black: #302c2c;
 $white: #fcfef7;
 $creamWhite: #f7f2ed;
@@ -176,7 +176,24 @@ p {
 
 
 .btn-danger {
-    color: #ffffff;
+    color: #fff;
+    border: 2px solid $danger;
+    transition: all ease 0.3s;
+    &:hover{
+        background-color: transparent;
+        color: $danger;
+        border: 2px solid $danger;
+    }
+}
+
+.btn-light {
+    border: 2px solid $white;
+    transition: all ease 0.3s;
+    &:hover{
+        background-color: transparent;
+        color: $dark;
+        border: 2px solid $white;
+    }
 }
 
 .btn-success {

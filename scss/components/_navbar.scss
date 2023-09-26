@@ -8,6 +8,7 @@ nav {
     @media (max-width: 1400px) {
       width: 17rem;
     }
+
     img {
       width: 100%;
       object-fit: contain;
@@ -15,14 +16,29 @@ nav {
   }
 
   .nav-link {
-    color: $white;
+    color: $primary;
     font-size: 1.2rem;
     font-weight: 500;
     margin: 0 1.5rem;
     z-index: 3;
+    position: relative;
 
-    &:hover {
-      color: #cfcaca;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $primary;
+      left: 0;
+      bottom: -0.2rem;
+      width: 0%;
+      height: 3px;
+      transition: all ease 0.4s;
+    }
+
+    &:hover{
+      color: $primary;
+      &::after{
+        width: 100%;
+      }
     }
 
     @media (max-width: 1400px) {
